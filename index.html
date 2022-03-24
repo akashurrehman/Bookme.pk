@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light rounded text-center">
+        <a class=" navbar-brand ml-lg-5 pt-lg-2" href="# ">Login</a>
+        <a class="navbar-brand pt-lg-2" href="# ">Help</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle Navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-lg-center" id="navbarsExample09">
+            <ul class="navbar-nav pt-2">
+                <li class="nav-item px-2">
+                    <a class="nav-link btn btn-light border-white mt-1" href="#">Bus<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item px-2">
+                    <a class="nav-link btn btn-light border-white mt-1" href="#">Flights</a>
+                </li>
+                <li class="nav-item px-2">
+                    <a class="nav-link btn btn-light border-white mt-1" href="#">Hotels</a>
+                </li>
+                <li class="nav-item px-2">
+                    <a class="nav-link btn btn-light border-white mt-1" href="#">Cargo</a>
+                </li>
+                <li class="nav-item px-2">
+                    <a class="nav-link btn btn-light border-white mt-1" href="#">Cricket</a>
+                </li>
+                <li class="nav-item px-2">
+                    <a class="nav-link btn btn-light border-white mt-1" href="#">Movies</a>
+                </li>
+                <li class="nav-item px-2">
+                    <a class="nav-link btn btn-light bg-light border-white mt-1" href="#">Events</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ALL BOOKINGS DONE THROUGH THIS -->
+
+    <!--This container used for Background picture-->
+    <div class="container-fluid py-5 my-3" id="picture">
+        <section id="div1 my-5">
+            <div class="container bg-light border-0 rounded my-sm-5 py-sm-4 border-light text-center align-content-center">
+                <div class="row ">
+                    <div class="col-sm-3 px-3">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         All Services
+                        </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="# ">Something else here</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         Select Departure
+                        </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item btn btn-primary" href="#">Action</a>
+                                <a class="dropdown-item" href="# ">Another action</a>
+                                <a class="dropdown-item " href="# ">Something else here</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 px-3">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         Select Arrival
+                        </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton ">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-2 px-3">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         Departure Date
+                        </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-2 px-3">
+                        <button class="btn btn-primary" type="submit">BOOK ME</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!--Card Deck -->
+    <section id="div2 ">
+        <div class="container">
+            <div class="row icon mb-lg-5 text-left pl-2 pr-2">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card bg-white border-primary p-3 w-100 h-100  bg-white text-center " style="width: 14rem; ">
+                        <i class="fa fa-life-bouy mt-3 pl-3 text-left" style="font-size:36px;"></i>
+                        <div class="card-body">
+                            <h4 class="h4 text-left">More for Less</h4>
+                            <p class="card-text text-left">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card bg-white border-light p-3 w-100 h-100 p-md-5 p-lg-3 bg-white text-center " style="width: 14rem; ">
+                        <i class="fa fa-life-bouy mt-3 pl-3 text-left" style="font-size:36px;"></i>
+                        <div class="card-body">
+                            <h4 class="h4 text-left">More for Less</h4>
+                            <p class="card-text text-left">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card bg-white border-light p-3 w-100 h-100 p-md-5 p-lg-3 bg-white text-center " style="width: 14rem; ">
+                        <i class="fa fa-life-bouy mt-3 pl-3 text-left" style="font-size:36px;"></i>
+                        <div class="card-body">
+                            <h4 class="h4 text-left">More for Less</h4>
+                            <p class="card-text text-left">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card bg-white border-light p-3 w-100 h-100 p-md-5 p-lg-3 bg-white text-center " style="width: 14rem; ">
+                        <i class="fa fa-life-bouy mt-3 pl-3 text-left" style="font-size:36px;"></i>
+                        <div class="card-body">
+                            <h4 class="h4 text-left">More for Less</h4>
+                            <p class="card-text text-left">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Slider Pictures-->
+    <section class="slider">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators ">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="first-slide" style="width: 100%;" src="./images/images.jpg" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="second-slide" style="width: 100%;" src="./images/download.jpg" alt="Second slide ">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="third-slide" style="width: 100%;" src="./images/images (1).jpg" alt=" Third slide ">
+                            </div>
+                        </div>
+
+                        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+                        </a>
+
+                        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section Brief-->
+    <section id="brief ">
+        <div class="container my-5 bg-light border-white">
+            <div class="row ">
+                <div class="col-lg-6 border-white pb-5">
+                    <h4 class="h4 pt-5 pb-4">Get amazing deals and bundles on Bookme Application</h4>
+                    <ul>
+                        <li>Multiple online booking options for application users.</li>
+                        <li>Get the information related to your online ticket bookings.</li>
+                        <li>Get points on your online bookings to redeem them later.</li>
+                    </ul>
+                    <button class="btn bg-dark border-light" type="submit"><a href="#">Download on the App Store</a></button>
+                    <button class="btn bg-dark border-white" type="submit"><a href="#">Get it on Google play</a></button>
+                    <h5 class="h5 pt-3">Or scan QR to get our app on your phone.</h5>
+                    <img src="./images/scan.png" style="width: 20%;" alt="scan image">
+                    <textarea class="bg-white border-light border-info" name="phone-no" id="phoneno" cols="20" rows="1">0300 2121259</textarea>
+
+                    <button class="btn btn-primary border-info pl-5" type="submit">Send Text</button>
+                </div>
+                <div class="col-lg-6 text-center pt-5">
+                    <img src="./images/img.png" style="width: 100%; height: 90%;" alt="Mobile Image">
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Book Me Online-->
+    <section id="Book">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 pl-0">
+                    <h3 class="h3">Bookme-Online Tickets Booking in Pakistan</h3>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-12 pl-0">
+                    <p class="p ">Looking for hassle free bus ticket bookings but ended up in long queues. Are you a travelling enthusiast but find difficulty in getting affordable flight tickets? Are you finding trouble in movie tickets and missing out on wonderful
+                        hotel bookings across Pakistan? Plus being a cricket lover is it hard for you to get tickets easily? This is where Bookme steps in with online ticket booking in Pakistan and eliminates the need to stand in never-ending queues and
+                        chase travel agents that make travel a stressful thing. Bookme has the e-ticketing solution to all your ticketing problems. Now buy your tickets online at a discounted price and fix your spot. Moreover, we enable you to get cheap
+                        e-tickets with our in-app bundles.</p>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-lg-12 pl-0">
+                    <h3 class="h3 ">Travel through Pakistan</h3>
+                </div>
+            </div>
+
+            <div class="row ">
+                <div class="col-lg-12 pl-0">
+                    <p class="p ">Save money on airfare by searching for cheap busses tickets using bookme. We search for deals on hundreds of bus operators and help you find the cheapest busses.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Announcements-->
+
+    <section id="Announcements ">
+        <div class="container pl-0 pt-5">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="h3">Announcements</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators ">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <!--Slides-->
+                    <div class="carousel-inner" role="listbox">
+                        <!--First slide-->
+                        <div class="carousel-item active">
+
+                            <div class="col-md-4" style="float:left">
+                                <div class="card mb-2">
+                                    <a href="#"><img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg" alt="Card image cap">
+                                        <p class="p bg-light">Be the first to recieve our best discounts Subscribe to our newsletter</p>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4" style="float:left">
+                                <div class="card mb-2">
+                                    <a href="#"><img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg" alt="Card image cap">
+                                        <p class="p bg-light">Be the first to recieve our best discounts Subscribe to our newsletter</p>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4" style="float:left">
+                                <div class="card mb-2">
+                                    <a href="#"><img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg" alt="Card image cap">
+                                        <p class="p bg-light">Be the first to recieve our best discounts Subscribe to our newsletter</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.First slide-->
+
+                        <!--Second slide-->
+                        <div class="carousel-item">
+
+                            <div class="col-md-4" style="float:left">
+                                <div class="card mb-2">
+                                    <a href="#"><img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg" alt="Card image cap">
+                                        <p class="p bg-light">Be the first to recieve our best discounts Subscribe to our newsletter</p>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4" style="float:left">
+                                <div class="card mb-2">
+                                    <a href="#"><img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg" alt="Card image cap">
+                                        <p class="p bg-light">Be the first to recieve our best discounts Subscribe to our newsletter</p>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4" style="float:left">
+                                <div class="card mb-2">
+                                    <a href="#"><img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg" alt="Card image cap">
+                                        <p class="p bg-light">Be the first to recieve our best discounts Subscribe to our newsletter</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.Second slide-->
+                    </div>
+                    <!--/.first Slides-->
+                    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+                    </a>
+
+                    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <!--/.Carousel Wrapper-->
+            </div>
+        </div>
+    </section>
+    <!--Email-->
+    <section id="email">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="h3 text-center">Be the first to recieve our best discounts</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="h3 text-center">Subscribe to our newsletter</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <form>
+                        <input class="w-50 bg-light border-primary p-2" type="email" id="emails" name="emails" placeholder="Enter your email">
+                        <button class="btn btn-primary w-25 p-2" type="submit">Subscribe Now</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--Footer-->
+    <footer class="footer-06 ">
+        <div class="container-fluid mt-4 bg-light">
+            <div class="container pl-0 pt-2 pr-0 ">
+                <div class="row ">
+                    <div class="col-md-2 mb-md-0 mb-4">
+                        <h2 class="footer-heading pt-3">Services</h2>
+                        <ul class="list-unstyled ">
+                            <li><a href="# " class="py-1 d-block "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Bus Tickets</a></li>
+                            <li><a href="# " class="py-1 d-block "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Flight Booking</a></li>
+                            <li><a href="# " class="py-1 d-block "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Hotels Booking</a></li>
+                            <li><a href="# " class="py-1 d-block "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Cricket/PSL Tickets</a></li>
+                            <li><a href="# " class="py-1 d-block "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Movie Tickets</a></li>
+                            <li><a href="# " class="py-1 d-block "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Events Tickets</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 mb-md-0 mb-4 ">
+                        <h2 class="footer-heading pt-3">Company</h2>
+                        <ul class="list-unstyled ">
+                            <li><a href="# " class="py-1 d-block "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>About Us</a></li>
+                            <li><a href="# " class="py-1 d-block "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Blog</a></li>
+                            <li><a href="# " class="py-1 d-block "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Annoucements</a></li>
+                            <li><a href="# " class="py-1 d-block "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Contact US</a></li>
+                            <li><a href="# " class="py-1 d-block "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>FAQ</a></li>
+                            <li><a href="# " class="py-1 d-block "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Privaacy Policy</a></li>
+                            <li><a href="# " class="py-1 d-block "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 mb-md-0 mb-4 ">
+                        <h2 class="footer-heading pt-3">Top Flights</h2>
+                        <ul class="list-unstyled ">
+                            <li><a href="# " class="py-1 d-block "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>PIA Booking</a></li>
+                            <li><a href="# " class="py-1 d-block "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Serene Air Booking</a></li>
+                            <li><a href="# " class="py-1 d-block "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>AirBlue Booking</a></li>
+                            <li><a href="# " class="py-1 d-block "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Emirate Booking</a></li>
+                            <li><a href="# " class="py-1 d-block "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Eithad Booking</a></li>
+                            <li><a href="# " class="py-1 d-block "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Turkish Booking</a></li>
+                            <li><a href="# " class="py-1 d-block "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Qatar Booking</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 mb-md-0 mb-4 ">
+                        <h2 class="footer-heading pt-3">Top Buses</h2>
+                        <ul class="list-unstyled ">
+                            <li><a href="# " class="py-1 d-block "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Road Master Booking</a></li>
+                            <li><a href="# " class="py-1 d-block "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Daewoo Express Booking</a></li>
+                            <li><a href="# " class="py-1 d-block "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Bilal Travels Booking</a></li>
+                            <li><a href="# " class="py-1 d-block "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Skyways Booking</a></li>
+                            <li><a href="# " class="py-1 d-block "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>SilkLine Booking</a></li>
+                            <li><a href="# " class="py-1 d-block "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>QConnect Booking</a></li>
+                            <li><a href="# " class="py-1 d-block "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Bashir Sons Booking</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 mb-md-0 mb-4 ">
+                        <h2 class="footer-heading pt-3">Follow Us</h2>
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a href="#"> <i class=" fa fa-facebook rounded" aria-hidden="true "></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+</html>
