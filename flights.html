@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Flights</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="styles.css">
+    <!-- Header  of Book Me.pk-->
+    <header id="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light rounded text-center">
+            <a class=" navbar-brand ml-lg-5 pt-lg-2" href="# ">Login</a>
+            <a class="navbar-brand pt-lg-2" href="# ">Help</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle Navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <div class="collapse navbar-collapse justify-content-lg-center" id="navbarsExample09">
+                <ul class="navbar-nav pt-2">
+                    <li class="nav-item px-2">
+                        <a class="nav-link btn btn-light border-white mt-1" href="Bus.html">Bus<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link btn btn-light border-white mt-1" href="flights.html">Flights</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link btn btn-light border-white mt-1" href="#">Hotels</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link btn btn-light border-white mt-1" href="#">Cargo</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link btn btn-light border-white mt-1" href="#">Cricket</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link btn btn-light border-white mt-1" href="#">Movies</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link btn btn-light bg-light border-white mt-1" href="#">Events</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--Book Airline Tickets Online-->
+    <section id="Book">
+        <div class="container-fluid pt-5 bg-light">
+            <div class="container bg-white border-0 border-dark rounded">
+                <div class="row">
+                    <div class="col-lg-5 rounded p-4">
+                        <h4 class="h4">Search and Book Flight Tickets</h4>
+                        <div class="form-check form-check-inline py-3 ml-2">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1">Round Trip</label>
+                        </div>
+                        <div class="form-check form-check-inline ml-2">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2">One Way</label>
+                        </div>
+                        <div class="form-check form-check-inline ml-2">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                            <label class="form-check-label" for="inlineRadio3">Multi-city</label>
+                        </div>
+
+                        <div class="d-inline-flex">
+                            <input class="btn btn-block w-100 bg-light border-info" type="text" name="Departure" id="departure" placeholder="City or Airport">
+                            <input class="btn btn-block ml-3 w-100 bg-light border-info" type="text" name="Departure" id="departure" placeholder="City or Airport">
+                        </div>
+                        <br>
+                        <div class="date d-inline-flex py-3">
+                            <input class="border rounded border-dark h-100 btn-block w-100 px-3 mr-3" type="date" name="date" id="datebooking" placeholder="Select Data and Time">
+                            <input class="border rounded border-dark h-100 btn-block w-100 px-3 ml-2" type="date" name="date" id="datebooking" placeholder="Select Data and Time">
+                        </div>
+                        <div class="dropdown open">
+                            <button class="btn btn-primary bg-dark dropdown-toggle btn-block text-justify" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup=" true" aria-expanded="false">
+                                        1-Economy
+                                    </button>
+                            <div class="dropdown-menu" aria-labelledby="triggerId">
+                                <button class="dropdown-item" href="#">Option-1</button>
+                                <button class="dropdown-item" href="#">Option-2</button>
+                            </div>
+                        </div>
+                        <div class="form-check py-3">
+                            <input class="form-check-input" type="checkbox" value=" " id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                            My Dates are flexible
+                            </label>
+                        </div>
+
+                        <button class="btn btn-lg btn-primary btn-block w-100 " role="button ">BOOKME</button>
+                    </div>
+
+                    <div class="col-lg-7 p-4 ">
+                        <div id="myCarousel " class="carousel slide " data-ride="carousel ">
+                            <ol class="carousel-indicators ">
+                                <li data-target="#myCarousel " data-slide-to="0 " class="active "></li>
+                                <li data-target="#myCarousel " data-slide-to="1 "></li>
+                                <li data-target="#myCarousel " data-slide-to="2 "></li>
+                            </ol>
+                            <div class="carousel-inner ">
+                                <div class="carousel-item active ">
+                                    <img class="first-slide " style="width: 100%; " src="./images/Book-1.jpg " alt="First slide ">
+                                </div>
+                                <div class="carousel-item ">
+                                    <img class="second-slide " style="width: 100%; " src="./images/book4.jpg " alt="Second slide ">
+                                </div>
+                                <div class="carousel-item ">
+                                    <img class="third-slide " style="width: 100%; " src="./images/book-3.jpg " alt=" Third slide ">
+                                </div>
+                            </div>
+
+                            <a class="carousel-control-prev " href="#myCarousel " role="button " data-slide="prev ">
+                                <span class="carousel-control-prev-icon " aria-hidden="true "></span>
+
+                            </a>
+
+                            <a class="carousel-control-next " href="#myCarousel " role="button " data-slide="next ">
+                                <span class="carousel-control-next-icon " aria-hidden="true "></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---Inner Div-->
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col-lg-12 pl-0">
+                <h4 class="h4">Looking for Flight Booking Online?</h4>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 pl-3">
+                    <p class="p">Bookme offers a diverse range of airlines to book your air-affair from. You can trust Bookme for the right travel decisions and arrangements for a great journey. Pakistan’s largest online flight ticketing site allows you to fly towards
+                        your dream escape with deals and discounts that can’t be found anywhere else. Briefly, Bookme is the complete solution for your online flight bookings globally</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <!--6 Flights Brands image-->
+                    <ul class="list-unstyled d-inline-flex">
+                        <li><img src="./images/airline-1.jpg" alt="airline-1" style="width: 100%;"></li>
+                        <li><img class="pl-5" src="./images/airline-2.png" alt="Airline-2" style="width: 100%;"></li>
+                        <li><img class="pl-5" src="./images/airline-3.png" alt="airline-3" style="width: 100%;"></li>
+                        <li><img class="pl-5" src="./images/airline-4.jpg" alt="airline-4" style="width: 50%;"></li>
+                        <li><img class="pl-5" src="./images/airline-5.png" alt="Airline-5" style="width: 50%;"></li>
+                        <li><img src="./images/airline-6.png" alt="Airline-6" style="width: 100%;"></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="container">
+        </div>
+        <div class="row">
+            <div class="col-lg-12 py-2 pl-0">
+                <h4 class="h4">Fly Well</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 pl-0 text-justify">
+                <p class="p">We all know Covid-19 is causing unprecedented change and uncertainty in our world, but Bookme is taking extra measures to help protect you and your booking. Bookme is focused on giving protected, reliable, and convenient procedures for
+                    online flight tickets booking. Whether you are taking a business trip, returning to your home city, or exploring nature’s wonders, you can schedule and book your flights online through Bookme for a seamless travel experience.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 py-2 pl-0">
+                <h4 class="h4">Manage your Airline Booking</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 pl-0 text-justify">
+                <p class="p">Peace of mind means changing your travel dates as often as you need. We understand your plans change, and that is why Bookme offers a fee-free policy to change your booking details before 48 hours of your flight. Now book your online flight
+                    ticket with Bookme and relax knowing that you are in safe hands.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 py-2 pl-0">
+                <h4 class="h4">Fly Wherever You Want</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 pl-0 text-justify">
+                <p class="p">Bookme has satisfied its customers with authentic online flight bookings for both domestic and international destinations.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 pt-4 pl-0">
+                <h4 class="h4 pl-0">Major international destinations include:</h4>
+                <ul>
+                    <li>Dubai</li>
+                    <li>Turkey</li>
+                    <li>Maldives</li>
+                    <li>United Kingdom</li>
+                    <li>Singapore</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 pt-1 pl-0">
+                <h4 class="h4 pl-0">Major Domestic Destinations:</h4>
+                <ul>
+                    <li>Karachi</li>
+                    <li>Islamabad</li>
+                    <li>Lahore</li>
+                    <li>Multan</li>
+                    <li>Quetta</li>
+                </ul>
+            </div>
+        </div>
+        <hr class="container">
+        <div class="row">
+            <div class="col-lg-12 pl-0">
+                <h4 class="h4">How to Book Flight Tickets Online ?</h4>
+                <h5 class="h5 pl-0 pb-4">Following are the effortless steps to book your airline ticket through bookme:</h5>
+                <ul>
+                    <li class="list">Go to the flights menu.</li>
+                    <li>Enter your travel details.</li>
+                    <li>Select your desired airline.</li>
+                    <li>Provide your contact details.</li>
+                    <li>Checkout your purchase.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer id="footer " class="footer-06 ">
+        <div class="container-fluid mt-4 pb-3 ">
+            <div class="container pl-0 pr-0 ">
+                <div class="row ">
+                    <div class="col-md-2 col-6 mb-md-0 mb-4 ">
+                        <h2 class="footer-heading pt-3 ">Services</h2>
+                        <ul class="list-unstyled ">
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Bus Tickets</a></li>
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Flight Booking</a></li>
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Hotels Booking</a></li>
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Cricket/PSL Tickets</a></li>
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Movie Tickets</a></li>
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Events Tickets</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-6 mb-md-0 mb-4 ">
+                        <h2 class="footer-heading pt-3 ">Company</h2>
+                        <ul class="list-unstyled ">
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>About Us</a></li>
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Blog</a></li>
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Annoucements</a></li>
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Contact US</a></li>
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>FAQ</a></li>
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Privaacy Policy</a></li>
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-6 mb-md-0 mb-4 ">
+                        <h2 class="footer-heading pt-3 ">Top Flights</h2>
+                        <ul class="list-unstyled ">
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>PIA Booking</a></li>
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Serene Air Booking</a></li>
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>AirBlue Booking</a></li>
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Emirate Booking</a></li>
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Eithad Booking</a></li>
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Turkish Booking</a></li>
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Qatar Booking</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-6 mb-md-0 mb-4 ">
+                        <h2 class="footer-heading pt-3 ">Top Buses</h2>
+                        <ul class="list-unstyled ">
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Road Master Booking</a></li>
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Daewoo Express Booking</a></li>
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Bilal Travels Booking</a></li>
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Skyways Booking</a></li>
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>SilkLine Booking</a></li>
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>QConnect Booking</a></li>
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Bashir Sons Booking</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 mb-md-0 mb-4 ">
+                        <h2 class="footer-heading pt-3 ">Follow Us</h2>
+                        <ul class="list-unstyled list-inline ">
+                            <li class="list-inline-item mr-3 ">
+                                <a href="# "> <i class=" fa fa-facebook fa-2x circle-icon " aria-hidden="true "></i></a>
+                            </li>
+                            <li class="list-inline-item mr-3 ">
+                                <a href=" "><i class="fa fa-instagram fa-2x " aria-hidden="true "></i></a>
+                            </li>
+                            <li class="list-inline-item mr-3 ">
+                                <a href=" "><i class="fa fa-twitter fa-2x " aria-hidden="true "></i></a>
+                            </li>
+                            <li class="list-inline-item mr-4 ">
+                                <a href=" "><i class="fa fa-linkedin fa-2x " aria-hidden="true "></i></a>
+                            </li>
+                            <li class="list-inline-item mr-4 pr-0 ">
+                                <a href=" "><i class="fa fa-youtube fa-2x " aria-hidden="true "></i></a>
+                            </li>
+                        </ul>
+                        <div class="d-inline-flex ">
+                            <button class="btn btn-dark w-50 mr-3 " type="submit ">Download on the Apple Store</button>
+                            <button class="btn btn-dark w-50 " type=" submit ">Download on the Anriod Store</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <section class="copyright ">
+            <div class="container pt-4 pb-0 ">
+                <div class="row ">
+                    <div class="col-lg-3 ">
+                        <img src="./images/New-Logo---Bookme.png " class="rounded float-left " style="width: 60%; " alt="BookMe Logo ">
+                    </div>
+                    <div class="col-lg-5 ">
+                        <h5 class="h5 text-center ">Copyright © 2022 Bookme.pk. All Right Reserved.</h5>
+                    </div>
+                    <div class="col-lg-3 ">
+                        <img src="./images/lock.jpg " class="rounded float-right " style="width: 60%; height: 50%; " alt="Lock Image ">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>

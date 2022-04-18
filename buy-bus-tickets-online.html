@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>BookMe.pk</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles.css">
+    <!-- Header  of Book Me.pk-->
+    <header id="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white rounded text-center border-dark">
+            <a class="navbar-brand ml-lg-5 pt-lg-2" href="LogIn.html">Login</a>
+            <a class="navbar-brand pt-lg-2" href="# ">Help</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle Navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarsExample09">
+                <ul class="navbar-nav pt-2">
+                    <li class="nav-item px-2">
+                        <a class="nav-link btn btn-light border-white mt-1" href="Bus.html">Bus<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item px-lg-2">
+                        <a class="nav-link btn btn-light border-white mt-1" href="flights.html">Flights</a>
+                    </li>
+                    <li class="nav-item px-lg-2">
+                        <a class="nav-link btn btn-light border-white mt-1" href="hotels.html">Hotels</a>
+                    </li>
+                    <li class="nav-item px-lg-2">
+                        <a class="nav-link btn btn-light border-white mt-1" href="Cargo.html">Cargo</a>
+                    </li>
+                    <li class="nav-item px-lg-2">
+                        <a class="nav-link btn btn-light border-white mt-1" href="Cricket.html">Cricket</a>
+                    </li>
+                    <li class="nav-item px-lg-2">
+                        <a class="nav-link btn btn-light border-white mt-1" href="Movies.html">Movies</a>
+                    </li>
+                    <li class="nav-item px-lg-2">
+                        <a class="nav-link btn btn-light bg-light border-white mt-1" href="Events.html">Events</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--Book Bus Tickets Online-->
+    <section id="Book">
+        <div class="container-fluid pt-5 bg-light">
+            <div class="container bg-white border-0 border-dark">
+                <div class="row">
+                    <div class="col-lg-5 rounded p-4">
+                        <h4 class="h4">Search and Book Bus Tickets</h4>
+                        <div class="d-inline-flex">
+                            <div class="dropdown pt-3 mr-3">
+                                <button class="btn btn-white border border-dark rounded dropdown-toggle btn-block" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" required>
+                            Select Departure
+                            </button>
+                                <div class="dropdown-menu required" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+
+                            <div class="dropdown pt-3 mr-sm-3 mr-0">
+                                <button class="btn btn-white border border-dark rounded dropdown-toggle btn-block text-center pr-sm-3" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Select Arrival
+                            </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="date py-3">
+                            <input class="border rounded border-dark h-75 btn-block w-75 pl-5" type="date" name="date" id="datebooking" placeholder="Departure Date">
+                        </div>
+                        <button class="btn btn-lg btn-primary btn-block w-75 mr-5" role="button">BOOKME</button>
+                    </div>
+
+                    <div class="col-lg-7 p-4">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators ">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="first-slide" style="width: 100%;" src="./images/Book-1.jpg" alt="First slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="second-slide" style="width: 100%;" src="./images/book4.jpg" alt="Second slide ">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="third-slide" style="width: 100%;" src="./images/book-3.jpg" alt=" Third slide ">
+                                </div>
+                            </div>
+
+                            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+                            </a>
+
+                            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="partners">
+        <div class="container bg-white pt-0">
+            <div class="row">
+                <di class="col-lg-12 pt-5">
+                    <h4 class="h4">Our Bus Partners</h4>
+                </di>
+            </div>
+
+            <div class="row">
+                <di class="col-lg-12">
+                    <p class="p text-justify">Providing a pool of bus vendors, bookme entertains its customers with exceptional bus online ticketing experience. One can make the right travel decision and arrangements for a great journey. Pakistan’s largest online bus ticketing
+                        site has driven bus e-ticketing service to new heights with 150+ bus companies on-board. Furthermore, Bookme covers all the major bus routes of Pakistan. In short, bookme is the complete solution for your online bus tickets.</p>
+                </di>
+            </div>
+            <div class="row d-inline-flex">
+                <div class="col-2">
+                    <a href="#"><img src="./images/logo1.png" style="width: 70%;" alt="Logo1"></a>
+                </div>
+                <div class="col-2">
+                    <a href="#"><img src="./images/logo2.png" style="width: 70%;" alt="logo2"></a>
+                </div>
+                <div class="col-2">
+                    <a href="#"><img src="./images/logo3.png" style="width: 60%;" alt="Logo3"></a>
+                </div>
+                <div class="col-2">
+                    <a href="#"><img src="./images/logo4.jpg" style="width: 60%;" alt="Logo4"></a>
+                </div>
+                <div class="col-2">
+                    <a href="#"><img src="./images/Logo5.png" style="width: 60%;" alt="Logo5"></a>
+                </div>
+                <div class="col-2">
+                    <a href="#"><img src="./images/logo6.png" style="width: 60%;" alt="Logo6"></a>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-12">
+                    <h5 class="h5">Phenomenal Online Bus Tickets Experience</h5>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <p class="p">Bookme is focused on giving protected, reliable, and convenient online bus tickets. Regardless of whether you are returning to your home city, going on a business trip, or exploring another city, you can schedule and book your seats
+                        online through Bookme.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <h4 class="h4">Availability of Multiple Routes</h4>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <p class="p">Whatever is your destination, we are at your service.Bookme provides online bus bookings for various major routes in Pakistan i.e. Lahore, Karachi, Islamabad, Multan, Faisalabad and Rawalpindi etc. You can easily find the best prices
+                        for online tickets to your destination through Bookme</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4 d-inline-flex">
+                    <img class="mr-5 rounded" src="./images/city_1.jpg" style="width: 50%; height: 100%;" alt="City-1">
+                </div>
+                <div class="col-4">
+                    <img class="mr-0 rounded" src="./images/city-2.jpg" style="width: 100%; height: 100%;" alt="City-2">
+                </div>
+                <div class="col-4">
+                    <img class="ml-5 rounded" src="./images/city-3.jpg" style="width: 60%; height: 100%;" alt="City-3">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 d-inline-flex">
+                    <img class="mr-5 mt-4 rounded" src="./images/city-4.jpg" style="width: 70%;" alt="City-4">
+                </div>
+
+                <div class="col-3">
+                    <img class="m-5 rounded" src="./images/city-5.jpg" style="width: 70%; height: 73%;" alt="City-5">
+                </div>
+                <div class="col-3">
+                    <img class="m-5 rounded" src="./images/city-6.jpg" style="width: 70%;" alt="City-6">
+                </div>
+                <div class="col-3">
+                    <img class="ml-3 mt-4 rounded" src="./images/city-8.jpg" style="width: 70%; height: 90%;" alt="city-8">
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <!--How to book-->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h5 class="h5">How To Book Bus Tickets</h5>
+                    <ul class="unordered-list">
+                        <li>Enter the departure and destination locations in the “From” and “To” tab respectively.</li>
+                        <li>Select the “Date of Your Bus Trip” and hit the “Search” button.</li>
+                        <li>Select a bus service of your choice from the list of buses that are displayed then click bookme.</li>
+                        <li>Select a seat number and mention your gender in the seat plan. </li>
+                        <li>Put in the “Passenger Information” and “Contact Information”</li>
+                        <li>You have to mention whether you are vaccinated or not.</li>
+                        <li>You will receive the OTP on your phone number, put it in.</li>
+                        <li>After filling all the information, select the payment method i.e easy paisa, debit card, and jazz cash etc.</li>
+                        <li>Hit the checkout button to confirm your online bus booking</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 d-block" id="style">
+                    <button class="btn btn-primary border-0 rounded d-flex align-items-center justify-content-center mt-2" style="height: 50px;" disabled="disabled">01 Enter your Location</button>
+                    <button class="btn btn-primary border-0 rounded d-flex align-items-center justify-content-center mt-2" style="height: 50px;" disabled=" disabled ">02 Select Date of Trip</button>
+                    <button class="btn btn-primary border-0 rounded d-flex align-items-center justify-content-center mt-2" style="height: 50px;" disabled="disabled ">03 Select Bus Service</button>
+                    <button class="btn btn-primary border-0 rounded d-flex align-items-center justify-content-center mt-2" style="height: 50px;" disabled="disabled ">04 Put Information</button>
+                    <button class="btn btn-primary border-0 rounded d-flex align-items-center justify-content-center mt-3" style="height: 50px;" disabled="disabled ">05 Confirm Booking</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Questions Dropdown-->
+
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-12">
+                <div class="dropdown open">
+                    <button class="btn bg-light text-justify border-dark dropdown-toggle btn-block" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Can i reserve the seat
+                            </button>
+                    <div class="dropdown-menu" aria-labelledby="triggerId">
+                        <button class="dropdown-item btn-block w-lg-150 disabled" href="#">Yes, no matter what type of ticket you reserve, you can book seats for free.</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 py-2">
+                <div class="dropdown open">
+                    <button class="btn bg-light text-justify border-dark dropdown-toggle btn-block" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                What if your bus is concelled?
+                            </button>
+                    <div class="dropdown-menu" aria-labelledby="triggerId">
+                        <button class="dropdown-item btn-block w-150 disabled" href="#">If the bus is cancelled, you may apply for a full refund, but this is assessed by the individual bus operator concerned. You can claim for a delay repay via our app.</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 py-2">
+                <div class="dropdown open">
+                    <button class="btn bg-light text-justify border-dark dropdown-toggle btn-block" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Can i change my seat Reservation
+                            </button>
+                    <div class="dropdown-menu" aria-labelledby="triggerId">
+                        <button class="dropdown-item btn-block w-150 disabled" href="#">We are sorry that seat reservations cannot be changed for the moment.</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-lg-12">
+                <h3 class="h3">PLAN YOUR NEXT TRIP</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <ul class=" list-unstyled d-inline-flex">
+                    <li class="text-decoration-none">
+                        <a href="#">Lahore to Rawalpindi</a>
+                    </li>
+                    <li class="text-decoration-none">
+                        <a href="#">Rawalpindi to Karachi</a>
+                    </li>
+                    <li class="text-decoration-none">
+                        <a href="#">Lahore to Islamabad</a>
+                    </li>
+                    <li class="text-decoration-none">
+                        <a href="#">Lahore to Rawalpindi</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer id="footer" class="footer-06">
+        <div class="container-fluid mt-4 pb-sm-3">
+            <div class="container pl-0 pt-2 pr-0 ">
+                <div class="row">
+                    <div class="col-md-2 col-6 mb-md-0 mb-4 ">
+                        <h2 class="footer-heading pt-3">Services</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Bus Tickets</a></li>
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Flight Booking</a></li>
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Hotels Booking</a></li>
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Cricket/PSL Tickets</a></li>
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Movie Tickets</a></li>
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Events Tickets</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-6 mb-md-0 mb-4 ">
+                        <h2 class="footer-heading pt-3 ">Company</h2>
+                        <ul class="list-unstyled ">
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>About Us</a></li>
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Blog</a></li>
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Annoucements</a></li>
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Contact US</a></li>
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>FAQ</a></li>
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Privaacy Policy</a></li>
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-6 mb-md-0 mb-4 ">
+                        <h2 class="footer-heading pt-3 ">Top Flights</h2>
+                        <ul class="list-unstyled ">
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>PIA Booking</a></li>
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Serene Air Booking</a></li>
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>AirBlue Booking</a></li>
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Emirate Booking</a></li>
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Eithad Booking</a></li>
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Turkish Booking</a></li>
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Qatar Booking</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-6 mb-md-0 mb-4">
+                        <h2 class="footer-heading pt-3 ">Top Buses</h2>
+                        <ul class="list-unstyled ">
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Road Master Booking</a></li>
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Daewoo Express Booking</a></li>
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Bilal Travels Booking</a></li>
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Skyways Booking</a></li>
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>SilkLine Booking</a></li>
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>QConnect Booking</a></li>
+                            <li><a href="# " class="py-1 d-block text-decoration-none "><span class="ion-ios-checkmark-circle-outline mr-2 "></span>Bashir Sons Booking</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-lg-3 mb-md-0 mb-4 ">
+                        <h2 class="footer-heading pt-3 ">Follow Us</h2>
+                        <ul class="list-unstyled list-inline ">
+                            <li class="list-inline-item mr-lg-3">
+                                <a href="# "> <i class=" fa fa-facebook fa-2x circle-icon " aria-hidden="true "></i></a>
+                            </li>
+                            <li class="list-inline-item mr-lg-3 ">
+                                <a href=" "><i class="fa fa-instagram fa-2x " aria-hidden="true "></i></a>
+                            </li>
+                            <li class="list-inline-item mr-lg-3 ">
+                                <a href=" "><i class="fa fa-twitter fa-2x " aria-hidden="true "></i></a>
+                            </li>
+                            <li class="list-inline-item mr-4">
+                                <a href=" "><i class="fa fa-linkedin fa-2x " aria-hidden="true "></i></a>
+                            </li>
+                            <li class="list-inline-item pr-lg-0">
+                                <a href=" "><i class="fa fa-youtube fa-2x " aria-hidden="true "></i></a>
+                            </li>
+                        </ul>
+                        <div class="d-inline-flex col-md-12">
+                            <button class="btn btn-dark w-100 mr-3" type="submit">Download on the Apple Store</button>
+                            <button class="btn btn-dark w-100" type="submit">Download on the Anriod Store</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <section class="copyright">
+            <div class="container pt-4 pb-0">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="./images/New-Logo---Bookme.png" class="rounded float-left" style="width: 60%;" alt="BookMe Logo">
+                    </div>
+                    <div class="col-5">
+                        <h5 class="h5 text-center ">Copyright © 2022 Bookme.pk. All Right Reserved.</h5>
+                    </div>
+                    <div class="col-3">
+                        <img src="./images/lock.jpg" class="rounded float-right" style="width: 60%; height: 50%;" alt="Lock Image">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
